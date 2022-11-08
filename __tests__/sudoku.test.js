@@ -1,9 +1,12 @@
-import { Game } from '../src/sudoku.js';
+import { Board } from '../src/sudoku.js';
 
-describe('Game', () => {
+describe('Board', () => {
 
-    test('should create a game object with the property turn', () => {
-        const game1 = new Game(1);
-        expect(game1.turn).toEqual(1);
+    test('should create a game object with the property nine, an array of 1-9', () => {
+        const board1 = new Board();
+        expect(board1.nine[3]).toEqual(4);
     });
+
+    
+
 });

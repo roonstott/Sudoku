@@ -1,9 +1,9 @@
 TN:
 SF:/Users/student/Desktop/sudoku/src/sudoku.js
-FN:1,Game
+FN:1,Board
 FNF:1
 FNH:1
-FNDA:1,Game
+FNDA:1,Board
 DA:2,1
 LF:1
 LH:1
