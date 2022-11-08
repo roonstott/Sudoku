@@ -1,5 +1,21 @@
 export function Board() {
-    this.nine = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+}
+
+Board.prototype.makeRow = function() {
+    let array = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+    return array;
 }
 
 
+
+Board.prototype.repeatingNumbers = function(numArray) {
+    let lucas = true;  
+    let alreadySeen ={};  
+    numArray.forEach(function(num) {
+      if (alreadySeen[num])
+        lucas = false;
+      else
+        alreadySeen[num] = true
+    });
+    return lucas;   
+}
