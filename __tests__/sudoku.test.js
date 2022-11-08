@@ -1,10 +1,9 @@
-import { TestScheduler } from 'jest';
-import Game from './..src/triangle.js';
+import { Game } from '../src/sudoku.js';
 
-describe ('Game', () => {
+describe('Game', () => {
 
     test('should create a game object with the property turn', () => {
-        const game1 = new Game();
-        expect(game.turn).toEqual(1);
+        const game1 = new Game(1);
+        expect(game1.turn).toEqual(1);
     });
 });
