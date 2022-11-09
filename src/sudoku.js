@@ -1,12 +1,16 @@
 export function Board() {
+
 }
 
 Board.prototype.makeRow = function() {
-    let array = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+    let array = [];
+    for(let i=1; i<=9; i++) {
+        array.push(i)
+    };
     return array;
-}
+};
 
-
+let board1 = new Board();
 
 Board.prototype.repeatingNumbers = function(numArray) {
     let lucas = true;  

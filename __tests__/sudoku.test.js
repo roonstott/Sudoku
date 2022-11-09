@@ -2,10 +2,10 @@ import { Board } from './../src/sudoku.js';
 
 describe('Board.makeRow', () => {
 
-    test('should create an array of letters "a" - "g"', () => {
+    test('should create an array of numbers 1-9', () => {
         const board1 = new Board();
         const row1 = board1.makeRow();
-        expect(row1[3]).toEqual("d");
+        expect(row1).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
     });
 });
 
